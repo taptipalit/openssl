@@ -166,6 +166,8 @@
 #include <openssl/safestack.h>
 #include <openssl/symhacks.h>
 
+#define SENSITIVE __attribute__((annotate("sensitive")))
+
 #ifdef  __cplusplus
 extern "C" {
 #endif

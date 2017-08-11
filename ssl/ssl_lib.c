@@ -1676,7 +1676,7 @@ static IMPLEMENT_LHASH_COMP_FN(ssl_session, SSL_SESSION)
 
 SSL_CTX *SSL_CTX_new(const SSL_METHOD *meth)
 	{
-	SSL_CTX *ret=NULL;
+	SENSITIVE SSL_CTX *ret=NULL;
 
 	if (meth == NULL)
 		{
